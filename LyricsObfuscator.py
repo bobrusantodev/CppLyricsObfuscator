@@ -5,7 +5,6 @@ import sys
 def bit_at_pos(val, pos):
     return val & (1 << pos)
 
-
 def word_bit_mask(word, mask):
     res = word[:]
     for i in range(len(word)):
@@ -20,7 +19,6 @@ if __name__ == "__main__":
 if len(argv) == 1:
     argv.append(input().strip())
     argv.append(input().strip())
-
 
 code_before = ""
 obfuscated_code = ""
@@ -127,7 +125,7 @@ defines.sort()
 with open(argv[1] + ".lo", 'w') as file:
     print(code_before, file=file)
 
-    print("// Have fun with LyricsObfuscator :) notWhaleB (2015)", file=file)
+    print("// Have fun with LyricsObfuscator :) bobrusantodev (2018)", file=file)
 
     for define in defines:
         print(define, file=file)
