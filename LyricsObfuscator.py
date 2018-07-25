@@ -139,7 +139,6 @@ with open(argv[1] + ".lo", 'w') as file:
         else:
             print(file=file)
     print(file=file)
-
     print(code_after, file=file)
-
-print("Done.")
+    
+print("Done :).")
