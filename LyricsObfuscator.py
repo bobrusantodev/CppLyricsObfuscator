@@ -1,5 +1,3 @@
-# Python 3.4
-
 import sys
 
 def bit_at_pos(val, pos):
@@ -125,7 +123,7 @@ defines.sort()
 with open(argv[1] + ".lo", 'w') as file:
     print(code_before, file=file)
 
-    print("// Have fun with LyricsObfuscator :) bobrusantodev (2018)", file=file)
+    print("// Have fun! :) bobrusantodev (2018)", file=file)
 
     for define in defines:
         print(define, file=file)
